@@ -12,6 +12,8 @@ Then the program could be executed in the build directory by, for example:
 
 ```./openfheattack $((2**55)) 30 16```
 
+It will generate `attack_output.txt` file, which contains the information to recover the key.
+
 # Test
 
 The program `test_data.py` is designed to test intermediate values in the attack. It computes and prints them, then tries to recover the secret key. Run it with `sage -python test_data.py`, after you executed `openfheattack` program
